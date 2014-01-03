@@ -27,8 +27,6 @@
     self.greenSlider.enabled = isOn;
     self.blueSlider.enabled = isOn;
     
-//    [self offColorSliderChangedWithStartNumber:1 WithLastNumber:3 WithOnOff:isOn];
-    
     if (isOn) {
         [self.activityIndicator startAnimating];
         //1초 뒤에 현재 색상으로 변경
@@ -37,14 +35,6 @@
         self.colorView.backgroundColor = [UIColor grayColor];
     }
 }
-
-//- (void)offColorSliderChangedWithStartNumber:(int)startNum WithLastNumber:(int)lastNum WithOnOff:(BOOL)isOn{
-//    
-//    for (int i = startNum; i <= lastNum; i++) {
-//        UISlider *slider = (UISlider *)[self.view viewWithTag:i];
-//        slider.enabled = isOn;
-//    }
-//}
 
 - (IBAction)onColorSliderChanged:(id)sender {
     //indicator 켜져있으면 끄기
